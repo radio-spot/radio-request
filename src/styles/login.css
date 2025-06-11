@@ -131,7 +131,8 @@ body {
 }
 
 .sign-in:hover {
-  background: #c62828;
+  background: #000000;
+  color: #00ffff
 }
 
 .create-account {
@@ -147,7 +148,7 @@ body {
 }
 
 .create-account:hover {
-  background: #fff;
+  background: #fff; 
   color: #941113;
 }
 

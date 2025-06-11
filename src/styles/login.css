@@ -127,12 +127,12 @@ body {
   font-weight: 700;
   box-shadow: 4px 8px 15px 0 rgba(80,80,80,0.17);
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.5s;
 }
 
 .sign-in:hover {
   background: #000000;
-  color: #ffffff
+  color: #0088ff
 }
 
 .create-account {
@@ -144,7 +144,7 @@ body {
   font-size: 1.15rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.5s, color 0.5s;
 }
 
 .create-account:hover {

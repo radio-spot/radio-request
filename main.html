@@ -1,25 +1,163 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>라디오 메인 화면</title>
-  <link rel="stylesheet" href="./src/styles/main.css" />
+  <meta charset="UTF-8">
+  <title>SPOT AIR</title>
+  <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
-  <div class="container">
-    <div class="grid-item" onclick="goTo('song-request')">신청곡</div>
-    <div class="grid-item" onclick="goTo('story-request')">사연 신청</div>
-    <div class="grid-item" onclick="goTo('chart')">인기차트</div>
-    <div class="grid-item" onclick="goTo('today-playlist')">오늘 방송 플리</div>
-    <div class="grid-item" onclick="goTo('announcer')">아나운서 소개</div>
-    <div class="grid-item" onclick="goTo('past-scripts')">지난 방송 대본</div>
-    <div class="grid-item" onclick="goTo('event')">이벤트 공지</div>
-    <div class="grid-item" onclick="goTo('about')">방송부 소개</div>
-    <div class="grid-item" onclick="goTo('calendar')">학교 일정</div>
-    <div class="grid-item" onclick="goTo('profile')">내 프로필</div>
-  </div>
-
-  <script src="./src/javascript/main.js"></script>
+  <header class="header">
+    <div class="logo">
+      <img src="./public/logo.png"/>
+      <span>Development version</span>
+    </div>
+    <div class="exam-info">
+      <span class="exam-title">기말고사</span>
+      <span class="d-day">D - 22</span>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-section">
+      <div class="banner">방송부 홍보란</div>
+      <div class="top-info-cards">
+        <div class="info-card">방송부에서<br>알려드립니다!</div>
+        <div class="info-card">Spot 오픈 기념 이벤트 예정<br>
+          <span>Spot 오픈을 기념해 시청자/사연 참여 이벤트가 곧 진행됩니다! 곧 공개될 이벤트 공지에서...</span>
+        </div>
+        <div class="info-card">Spot 이용 가이드 안내<br>
+          <span>Spot을 처음 사용하는 분들을 위해 간단한 이용 가이드를 준비했습니다!</span>
+        </div>
+        <div class="info-card">방송부 앱 Spot 출시 안내<br>
+          <span>안녕하세요, 방송부입니다. 드디어 방송부 전용 웹 "Spot"이 시범으로 출시되었습니다 :)~</span>
+        </div>
+      </div>
+      <div class="event-card">
+        <h3>Event!</h3>
+        <p>현재 진행 중인 이벤트가 없습니다 :)</p>
+      </div>
+      <div class="icon-row">
+        <div class="icon-card">
+          <div class="icon icon1"></div>
+          <div class="icon-label">사연신청</div>
+        </div>
+        <div class="icon-card">
+          <div class="icon icon2"></div>
+          <div class="icon-label">신청곡</div>
+        </div>
+        <div class="icon-card">
+          <div class="icon icon3"></div>
+          <div class="icon-label">인기차트</div>
+        </div>
+        <div class="icon-card">
+          <div class="icon icon4"></div>
+          <div class="icon-label">방송부원</div>
+        </div>
+        <div class="icon-card">
+          <div class="icon icon5"></div>
+          <div class="icon-label">문의사항</div>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <div class="school-schedule card">
+          <h4>학교 일정</h4>
+          <ul>
+            <li><span class="date">16일</span> 월요일<br>• 뉴로우 방송 사고</li>
+            <li><span class="date">17일</span> 화요일<br>• 뉴로우 방송 사고</li>
+            <li><span class="date">18일</span> 수요일<br>• 뉴로우 방송 사고</li>
+          </ul>
+        </div>
+        <div class="last-broadcast card">
+          <div class="card-header">
+            <span>지난 방송</span>
+            <span class="date">2025.06.13</span>
+          </div>
+          <div class="broadcast-title">“빡단비 빡공썰 푼다” <span class="badge">익명</span></div>
+          <div class="broadcast-info">
+            <div><b>카테고리</b> - 학습</div>
+            <div><b>사연 내용</b><br>
+              다들 열심히 안하네? 터졋네?
+            </div>
+            <div class="broadcaster">
+              <div class="avatar"></div>
+              <span>빡단비<br><small>1학년 방송부</small></span>
+            </div>
+          </div>
+        </div>
+        <div class="today-playlist card">
+          <div class="card-header">
+            <span>오늘의 플레이</span>
+          </div>
+          <ol>
+            <li>
+              <span class="song-thumb"><img src="./public/너에게 닿기를.png"></span>
+              <span class="song-info">Danbe<br><small>덤벙비</small></span>
+            </li>
+            <li>
+              <span class="song-thumb"><img src="./public/너에게 닿기를.png"></span>
+              <span class="song-info">Danbe<br><small>쿨단비</small></span>
+            </li>
+            <li>
+              <span class="song-thumb"><img src="./public/너에게 닿기를.png"></span>
+              <span class="song-info">Danbe<br><small>착한비</small></span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <div class="profile card">
+        <div class="avatar"></div>
+        <div class="profile-info">
+          <div class="profile-meta">1학년 2반 4번</div>
+          <div class="name">정한비</div>
+          <div class="role">단비</div>
+          <button class="profile-edit">프로필 수정</button>
+        </div>
+      </div>
+      <div class="my-songs card">
+        <div class="card-title">내가 신청한 곡 <span class="cnt">(2건)</span></div>
+        <ul>
+          <li>
+            <div class="song-thumb"><img src="./public/너에게 닿기를.png"></div>
+            <div class="song-info">너에게 닿기를<br><small>10cm</small></div>
+          </li>
+          <li>
+            <div class="song-thumb"><img src="./public/너에게 닿기를.png"></div>
+            <div class="song-info">이게 아닌데~<br><small>승아</small></div>
+          </li>
+        </ul>
+      </div>
+      <div class="my-broadcast card">
+        <div class="card-title">내가 접수한 사연 <span class="cnt">(null건)</span></div>
+        <div class="broadcast-title">“음하하하” <span class="badge">익명</span></div>
+        <div class="broadcast-info">
+          <div><b>카테고리</b> - 빡침</div>
+          <div><b>사연 내용</b><br>
+            저 빡단비인데 집이 너무 좋아요ㅎㅎ
+          </div>
+        </div>
+      </div>
+      <div class="my-inquiry card">
+        <div class="card-title">내 문의사항 <span class="cnt">(0건)</span></div>
+        <p>해당 내용이 없습니다 :)</p>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">저작권보호정책</a>
+      <a href="#">이용약관</a>
+      <a href="#">이메일주소무단수집거부</a>
+      <a href="#">영상정보처리기기운영방침</a>
+    </div>
+    <div class="footer-copy">
+      <p>
+        [43010] 대구광역시 달성군 구지면 창리로 11길 93 - 방송실<br>
+        Copyright ⓒTeam 덤벙빡단비. All Rights Reserved.<br>
+        통합고객지원센터(시스템문의) : 010-0000-0000
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

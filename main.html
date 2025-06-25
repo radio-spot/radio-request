@@ -14,6 +14,7 @@
     <div class="exam-info">
       <span class="exam-title">기말고사</span>
       <span class="d-day">D - 22</span>
+      <span class="current-time"></span>
     </div>
   </header>
   <main class="main">
@@ -36,24 +37,24 @@
         <p>현재 진행 중인 이벤트가 없습니다 :)</p>
       </div>
       <div class="icon-row">
-        <div class="icon-card">
-          <div class="icon icon1"></div>
+        <div class="icon-card" onclick="goTo('사연신청')" role="button" tabindex="0" aria-label="사연신청 페이지로 이동">
+          <div class="icon icon1" aria-hidden="true"></div>
           <div class="icon-label">사연신청</div>
         </div>
-        <div class="icon-card">
-          <div class="icon icon2"></div>
+        <div class="icon-card" onclick="goTo('신청곡')" role="button" tabindex="0" aria-label="신청곡 페이지로 이동">
+          <div class="icon icon2" aria-hidden="true"></div>
           <div class="icon-label">신청곡</div>
         </div>
-        <div class="icon-card">
-          <div class="icon icon3"></div>
+        <div class="icon-card" onclick="goTo('인기차트')" role="button" tabindex="0" aria-label="인기차트 페이지로 이동">
+          <div class="icon icon3" aria-hidden="true"></div>
           <div class="icon-label">인기차트</div>
         </div>
-        <div class="icon-card">
-          <div class="icon icon4"></div>
+        <div class="icon-card" onclick="goTo('방송부원')" role="button" tabindex="0" aria-label="방송부원 소개 페이지로 이동">
+          <div class="icon icon4" aria-hidden="true"></div>
           <div class="icon-label">방송부원</div>
         </div>
-        <div class="icon-card">
-          <div class="icon icon5"></div>
+        <div class="icon-card" onclick="goTo('문의사항')" role="button" tabindex="0" aria-label="문의사항 페이지로 이동">
+          <div class="icon icon5" aria-hidden="true"></div>
           <div class="icon-label">문의사항</div>
         </div>
       </div>
@@ -61,9 +62,9 @@
         <div class="school-schedule card">
           <h4>학교 일정</h4>
           <ul>
-            <li><span class="date">16일</span> 월요일<br>• 뉴로우 방송 사고</li>
-            <li><span class="date">17일</span> 화요일<br>• 뉴로우 방송 사고</li>
-            <li><span class="date">18일</span> 수요일<br>• 뉴로우 방송 사고</li>
+            <li><span class="date">16일</span> 월요일<br>• 음악 방송</li>
+            <li><span class="date">17일</span> 화요일<br>• 토크 방송</li>
+            <li><span class="date">18일</span> 수요일<br>• 사연 방송</li>
           </ul>
         </div>
         <div class="last-broadcast card">
@@ -111,7 +112,7 @@
           <div class="profile-meta">1학년 2반 4번</div>
           <div class="name">정한비</div>
           <div class="role">단비</div>
-          <button class="profile-edit">프로필 수정</button>
+          <button class="profile-edit"><a class="link-google" href="https://google.com">프로필 수정</a></button>
         </div>
       </div>
       <div class="my-songs card">
@@ -128,7 +129,7 @@
         </ul>
       </div>
       <div class="my-broadcast card">
-        <div class="card-title">내가 접수한 사연 <span class="cnt">(null건)</span></div>
+        <div class="card-title">내가 접수한 사연 <span class="cnt">(1건)</span></div>
         <div class="broadcast-title">“음하하하” <span class="badge">익명</span></div>
         <div class="broadcast-info">
           <div><b>카테고리</b> - 빡침</div>
@@ -159,5 +160,6 @@
       </p>
     </div>
   </footer>
+  <script src="src/javascript/main.js"></script>
 </body>
 </html>
